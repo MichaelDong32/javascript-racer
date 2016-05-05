@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function updatePlayerPosition (player) {
     for (var i = 0; i < player.length; i++) {
       if (player[i] === 'active') {
-        player [i] = player[i].nextElementSibling
+        player[i] = player[i].nextElementSibling
         // console.log(nextElement);
-        if (player[i] === player [10]) {
-          // alert ('Game Over')
+        if (player[i] === player[10]) {
+          alert ('Game Over')
           startGame(player1_items)
           startGame(player2_items)
         } else {
