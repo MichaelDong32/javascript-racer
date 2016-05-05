@@ -30,10 +30,10 @@ startGame(player2_items);
 
 function updatePlayerPosition (player) {
   for(var i = 0; i < player.length; i++){
-    if(player[i[ === 'activ')[
+    if(player[i] === 'active'){
       nextElement = player[i].nextElementSibling;
       //console.log(nextElement);
-      if(player[i] === player [10])}
+      if(player[i] === player [10]){
         alert('Game Over')
         startGame(player1_items);
         startGame(player2_items);
@@ -45,7 +45,6 @@ function updatePlayerPosition (player) {
       };
     };
   };
-};
 
 //run he update player function based on the key press
 
@@ -59,5 +58,6 @@ document.onKeyUp = function whichKey(event){
   };
 };
   
+  //});
 
 
