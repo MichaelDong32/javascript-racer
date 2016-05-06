@@ -1,17 +1,3 @@
-.header {
-  text-align: center;
-}
-
-.race-game{
-  text-align: center;
-}
-
-.racer-table{
-  margin: auto;
-
-}
-
-
 .racer_table td {
   background-color: LightGrey;
   height:50px;
