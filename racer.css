@@ -6,19 +6,22 @@
   text-align: center;
 }
 
-.racer_table{
+.racer-table{
   margin: auto;
 
 }
 
 
 .racer_table td {
-  background-color: white;
+  background-color: LightGrey;
   height:50px;
   width: 50px;
-  border: 2px solid black;
 }
 
-.racer_table td.active {
-  background-color: black;
+.racer_table td.active1 {
+  background-color: blue;
+}
+
+.racer_table td.active2 {
+  background-color: red;
 }
