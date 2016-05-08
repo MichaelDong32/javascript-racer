@@ -1,8 +1,19 @@
 .header{
   text-align: center;
-
+  font-family: 'Amatic SC', cursive;
 }
  
+ .header h1 {
+  font-size: 5em;
+  font-weight: bolder;
+  margin-top: 100px;
+ }
+
+ .header p {
+  font-size: 2em;
+  font-weight: bold;
+ }
+
 .racer_table {
   margin-left: auto;
   margin-right:auto;
@@ -15,10 +26,9 @@
 }
 
 .racer_table td.active1 {
-  background-color: blue;
-  background-image: /redfrog.jpg:;
+  background-image: url(images/redfrog.jpg);
 }
 
 .racer_table td.active2 {
-  background-color: red;
+  background-image: url(images/yellow-frog.jpg);
 }
