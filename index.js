@@ -25,7 +25,7 @@ function movePlayer (playerInt) {
 
 function checkForVictory (nextCell, playerInt) {
   if (nextCell === undefined) {
-    alert('Player ' + playerInt + ' wins!')
+    alert('Frog ' + playerInt + ' wins!')
     window.location.reload()
   }
 }
