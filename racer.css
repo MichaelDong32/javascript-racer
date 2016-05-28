@@ -15,6 +15,10 @@
   margin:20px;
  }
 
+ .players {
+  text-align: center;
+ }
+
 .racer_table {
   margin-left: auto;
   margin-right:auto;
@@ -22,14 +26,27 @@
 
 
 .racer_table td {
-  height:100px;
-  width: 100px;
+  height: 50px;
+  width:  50px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .racer_table td.active1 {
-  background-image: url(images/redfrog.jpg);
+  background-image: url(images/striped-frog.jpg);
 }
 
 .racer_table td.active2 {
   background-image: url(images/yellow-frog.jpg);
+
+}
+
+.racer_table td.active3 {
+  background-image: url(images/green-frog.jpg);
+
+}
+
+.racer_table td.active4 {
+  background-image: url(images/Blue-Frog.jpg);
+
 }

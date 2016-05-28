@@ -4,7 +4,7 @@
   <title>JavaScriptRacer</title>
 
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
   <link rel="stylesheet" type="text/css" href="racer.css">
   <audio id="frog">
@@ -13,59 +13,84 @@
   <script src="index.js"></script>
 </head>
   <body>
-    <section class="header">    
-    <h1>Frog racer</h1>
-    <p>How many frogs are racing today?</p>
-    <p>To move the red frog, press "Q", to move the yellow frog, press "P"</p>
+    <div class="container">
+      <div class="row">
+        <section class="header">    
+         <h1>Frog racer</h1>
+         <p>How many frogs are racing today?</p>
+       </section>
+      </div>
+      <div class ="row">
+        <div class = "players">
+          <input type = "button" class ="playerButton" name = "player1" id ="player1" value= "one frog">
+          <input type = "button" class ="playerButton" name = "player2" id ="player3" value= "two frogs">
+          <input type = "button" class ="playerButton" name = "player3" id ="player3" value= "three frogs">
+          <input type = "button" class ="playerButton" name = "player4" id ="player4" value= "four frogs">
+          <!--<input class="button-primary" type="button" id = "player1" value="One Frog">
+          <input class="button-primary" type="button" id = "player2" value="Two Frogs">
+          <input class="button-primary" type="button" id = "player3" value="Three Frogs">
+          <input class="button-primary" type="button" id = "player4" value="Four Frogs">-->
+        </div>
+      </div>
+    
+        <div class ="row">
+          <div class ="instructions"
+            <p>To move the red frog, press "Q", to move the yellow frog, press "P"</p>
+          </div>
+        </div>
 
-      <table class="racer_table">
-        <tr id="player1_strip">
-          <td class="active1"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr id="player2_strip">
-          <td class="active2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-               <tr id="player3_strip">
-          <td class="active3"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr id="player4_strip">
-          <td class="active4"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr
-      </table>
+        <div class="row">
+          <div class = "racer">
+            <table class="racer_table">
+            <tr id="player1_strip">
+              <td class="active1"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr id="player2_strip">
+              <td class="active2"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr id="player3_strip">
+              <td class="active3"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr id="player4_strip">
+              <td class="active4"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr
+          </table>
+          </div>
+        </div>
+  </div>
 
-      </section>
 
   </body>
 </html>
