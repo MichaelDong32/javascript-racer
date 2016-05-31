@@ -2,6 +2,22 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('keyup', handleKeyPress)
 })
 
+//choose player - toggle to show the table row
+
+function toggle(row) {
+  if (isNaN(row)) row = document.getElementById(row); // id passed
+  else row = document.getElementById('table1').rows[row]; // idx passed
+  if (row) row.style.display=(row.style.display=='none')?'':'none';
+  return false;
+}
+
+//show instructions via alert dialog box to start
+
+document.getElementById('start').addEventListener("click", function(){
+    alert("To move Froggy1 press q, Froggy 2 press p, Froggy3 press x and Froggy4 press m");
+})
+
+
 //create frog sound on keypress
 
 var sounds = {
@@ -17,39 +33,7 @@ document.onkeydown = function(e) {
 }
 //select how many players
 
-/*var get1Player = document.getElementById('player1');
-get1Player.addEventListener("click", function(){
-    document.getElementById('player1_strip').style.display = "inherit";
-    document.getElementById('player2_strip').style.display = "none";
-    document.getElementById('player3_strip').style.display = "none";
-    document.getElementById('player4_strip').style.display = "none";
-  });
 
-/*var get2Player = document.getElementById('player2');
-get2Player.addEventListener("click", function(){
-    document.getElementById('player1_strip').style.display = "inherit";
-    document.getElementById('player2_strip').style.display = "inherit";
-    document.getElementById('player3_strip').style.display = "none";
-    document.getElementById('player4_strip').style.display = "none";
-  });
-
-var get3Player = document.getElementById('player3');
-get3Player.addEventListener("click", function(){
-    document.getElementById('player1_strip').style.display = "inherit";
-    document.getElementById('player2_strip').style.display = "inherit";
-    document.getElementById('player3_strip').style.display = "inherit";
-    document.getElementById('player4_strip').style.display = "none";
-  });
-
-var get4Player = document.getElementById('player4');
-get4Player.addEventListener("click", function(){
-    document.getElementById('player2_strip').style.display = "inherit";
-    document.getElementById('player1_strip').style.display = "inherit";
-    document.getElementById('player3_strip').style.display = "inherit";
-    document.getElementById('player4_strip').style.display = "inherit";
-  });
-*/
-//set keypresses to fire the move player function
 
 function handleKeyPress (e) {
   if (e.which == 81) {
@@ -72,7 +56,7 @@ function handleKeyPress (e) {
 //move the frogs using the movePlayer funtion
 
 function movePlayer (playerInt) {
-  var row = document.getElementById('player' + playerInt + '_strip')
+  var row = document.getElementById('row' + playerInt)
   var cell = document.getElementsByClassName('active' + playerInt)
   var nextCell = row.cells[cell[0].cellIndex + 1]
 

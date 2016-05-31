@@ -21,12 +21,12 @@ body{
   margin:20px;
  }
 
- .players {
-  text-align: center;
+.button {
+  background-color: green;
  }
 
- .playerButton {
-  color: green;
+ #start {
+  margin:10px auto 15px auto;
  }
 
 .racer_table {
@@ -37,9 +37,9 @@ body{
 
 .racer_table td {
   height: 50px;
-  width:  50px;
-  border-style: solid;
-  border-width: 1px;
+  width:  52px;
+  /*border-style: solid;
+  border-width: 1px;*/
 }
 
 .racer_table td.active1 {

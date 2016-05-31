@@ -10,39 +10,38 @@
   <audio id="frog">
   <source src=Croaking.mp3>
   </audio>
-  <script src="index.js"></script>
+  
 </head>
   <body>
     <div class="container">
       <div class="row">
         <section class="header">    
          <h1>Frog racer</h1>
-         <p>How many frogs are racing today?</p>
+         <p>Choose your frog and get ready to race!!</p>
        </section>
       </div>
       <div class ="row">
-        <div class = "players">
-          <input type = "button" class ="playerButton" name = "player1" id ="player1" value= "one frog">
-          <input type = "button" class ="playerButton" name = "player2" id ="player3" value= "two frogs">
-          <input type = "button" class ="playerButton" name = "player3" id ="player3" value= "three frogs">
-          <input type = "button" class ="playerButton" name = "player4" id ="player4" value= "four frogs">
-          <!--<input class="button-primary" type="button" id = "player1" value="One Frog">
-          <input class="button-primary" type="button" id = "player2" value="Two Frogs">
-          <input class="button-primary" type="button" id = "player3" value="Three Frogs">
-          <input class="button-primary" type="button" id = "player4" value="Four Frogs">-->
+        <div class = "players" 
+
+          <button class="button-primary" >Froggy1</button>
+          <button class="button-primary" onClick="return toggle('row2')">Froggy2</button>  
+          <button class="button-primary" onClick="return toggle('row3')">Froggy3</button>
+          <button class="button-primary" onClick="return toggle('row4')">Froggy4</button>
         </div>
       </div>
     
         <div class ="row">
-          <div class ="instructions"
-            <p>To move the stripey frog, press "Q", to move the yellow frog, press "P", to move green, press "X" and for blue, press "M"</p>
+          <div class ="instructions">
+
+          <button id="start"> Are you ready to play?</button>
+            <!--<p>To move the stripey frog, press "Q", to move the yellow frog, press "P", to move green, press "X" and for blue, press "M"</p>-->
           </div>
         </div>
 
         <div class="row">
           <div class = "racer">
             <table class="racer_table">
-            <tr id="player1_strip">
+            <tr id="row1">
               <td class="active1"></td>
               <td></td>
               <td></td>
@@ -59,7 +58,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr id="player2_strip">
+            <tr id="row2">
               <td class="active2"></td>
               <td></td>
               <td></td>
@@ -76,7 +75,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr id="player3_strip">
+            <tr id="row3">
               <td class="active3"></td>
               <td></td>
               <td></td>
@@ -93,7 +92,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr id="player4_strip">
+            <tr id="row4">
               <td class="active4"></td>
               <td></td>
               <td></td>
@@ -115,6 +114,6 @@
         </div>
   </div>
 
-
+<script src="index.js"></script>
   </body>
 </html>
